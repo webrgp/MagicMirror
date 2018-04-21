@@ -8,6 +8,12 @@
  *
  */
 
+var weatherLocationConfig = {
+	location: "South Yarmouth, MA",
+	locationID: "4951579",  //ID from http://www.openweathermap.org/help/city_list.txt
+	appid: "1cf5a716bda3e37f6669df8b1b953921"
+};
+
 var config = {
 	address: "localhost", // Address to listen on, can be:
 	                      // - "localhost", "127.0.0.1", "::1" to listen on loopback interface
@@ -57,21 +63,13 @@ var config = {
 		{
 			module: "currentweather",
 			position: "top_right",
-			config: {
-				location: "New York",
-				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
+			config: weatherLocationConfig
 		},
 		{
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
-			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
+			config: weatherLocationConfig
 		},
 		{
 			module: "newsfeed",
