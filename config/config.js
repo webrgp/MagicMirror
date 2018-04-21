@@ -78,8 +78,8 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "Huffington Post Politics",
+						url: "https://www.huffingtonpost.com/section/politics/feed"
 					}
 				],
 				showSourceTitle: true,
