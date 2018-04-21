@@ -9,6 +9,7 @@
  */
 
 var weatherLocationConfig = {
+	units: "imperial",
 	location: "South Yarmouth, MA",
 	locationID: "4951579",  //ID from http://www.openweathermap.org/help/city_list.txt
 	appid: "1cf5a716bda3e37f6669df8b1b953921"
